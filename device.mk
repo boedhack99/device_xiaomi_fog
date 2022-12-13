@@ -477,7 +477,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.fog
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+    $(LOCAL_PATH)/hals/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
