@@ -17,7 +17,7 @@ cc_defaults {
 }
 
 cc_binary {
-    name: "android.hardware.usb@1.2-service-xiaomi_bengal",
+    name: "android.hardware.usb@1.2-service.fog",
     defaults: ["qti_usb_hal_defaults"],
     shared_libs: [
         "android.hardware.usb@1.0",
@@ -28,12 +28,12 @@ cc_binary {
         "Usb.cpp",
     ],
 
-    init_rc: ["android.hardware.usb@1.2-service-xiaomi_bengal.rc"],
-    vintf_fragments: ["android.hardware.usb@1.2-service-xiaomi_bengal.xml"],
+    init_rc: ["android.hardware.usb@1.2-service.fog.rc"],
+    vintf_fragments: ["android.hardware.usb@1.2-service.fog.xml"],
 }
 
 cc_binary {
-    name: "android.hardware.usb.gadget@1.0-service-xiaomi_bengal",
+    name: "android.hardware.usb.gadget@1.0-service.fog",
     defaults: ["qti_usb_hal_defaults"],
     shared_libs: [
         "android.hardware.usb.gadget@1.0",
@@ -42,6 +42,6 @@ cc_binary {
         "UsbGadget.cpp",
     ],
 
-    init_rc: ["android.hardware.usb.gadget@1.0-service-xiaomi_bengal.rc"],
-    vintf_fragments: ["android.hardware.usb.gadget@1.0-service-xiaomi_bengal.xml"],
+    init_rc: ["android.hardware.usb.gadget@1.0-service.fog.rc"],
+    vintf_fragments: ["android.hardware.usb.gadget@1.0-service.fog.xml"],
 }

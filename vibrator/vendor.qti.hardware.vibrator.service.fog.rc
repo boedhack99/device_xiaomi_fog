@@ -1,0 +1,4 @@
+service vendor.qti.vibrator.fog /vendor/bin/hw/vendor.qti.hardware.vibrator.service.fog
+    class hal
+    user system
+    group system input

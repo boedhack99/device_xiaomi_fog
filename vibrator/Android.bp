@@ -2,7 +2,7 @@ Common_CFlags = ["-Wall"]
 Common_CFlags += ["-Werror"]
 
 cc_library_shared {
-    name: "vendor.qti.hardware.vibrator.impl.xiaomi_bengal",
+    name: "vendor.qti.hardware.vibrator.impl.fog",
     vendor: true,
     cflags: Common_CFlags,
     srcs: [
@@ -20,12 +20,12 @@ cc_library_shared {
 }
 
 cc_binary {
-    name: "vendor.qti.hardware.vibrator.service.xiaomi_bengal",
+    name: "vendor.qti.hardware.vibrator.service.fog",
     vendor: true,
     relative_install_path: "hw",
-    init_rc: ["vendor.qti.hardware.vibrator.service.xiaomi_bengal.rc"],
+    init_rc: ["vendor.qti.hardware.vibrator.service.fog.rc"],
     vintf_fragments: [
-        "vendor.qti.hardware.vibrator.service.xiaomi_bengal.xml",
+        "vendor.qti.hardware.vibrator.service.fog.xml",
     ],
     cflags: Common_CFlags,
     srcs: [
@@ -37,6 +37,6 @@ cc_binary {
         "libbase",
         "libbinder_ndk",
         "android.hardware.vibrator-V1-ndk",
-        "vendor.qti.hardware.vibrator.impl.xiaomi_bengal",
+        "vendor.qti.hardware.vibrator.impl.fog",
     ],
 }

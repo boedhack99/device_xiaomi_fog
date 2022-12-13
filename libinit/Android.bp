@@ -5,6 +5,14 @@
 //
 
 cc_library_static {
+    name: "init_xiaomi_fog",
+    srcs: ["init_xiaomi_fog.cpp"],
+    whole_static_libs: ["//device/xiaomi/fog:libinit_xiaomi_bengal"],
+    include_dirs: ["system/core/init"],
+    recovery_available: true,
+}
+
+cc_library_static {
     name: "libinit_xiaomi_bengal",
     srcs: [
         "libinit_dalvik_heap.cpp",

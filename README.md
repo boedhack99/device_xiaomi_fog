@@ -1,9 +1,5 @@
-# Common device tree for Xiaomi SM6225 devices
+## Device Configuration for Xiaomi Redmi 10/10C/10 Power
 
-```
-#
-# Copyright (C) 2022 The LineageOS Project
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-```
+The Xiaomi Redmi 10/10C/10 Power (codenamed _"fog/rain/wind"_) is a low range smartphone from Xiaomi.
+
+Redmi 10C was announced and released in March 2022.
