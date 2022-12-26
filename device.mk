@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.r_submix.default \
-    audio.primary.bengal \
     audio.primary.default \
     audio.usb.default
 
@@ -107,10 +106,6 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libtinycompress
-
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.audiohalext@1.0 \
-    vendor.qti.hardware.audiohalext@1.0.vendor
 
 # Audio configs
 PRODUCT_COPY_FILES += \
@@ -122,12 +117,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
-
-# AVB
-PRODUCT_PACKAGES += \
-    q-gsi.avbpubkey \
-    r-gsi.avbpubkey \
-    s-gsi.avbpubkey
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -192,12 +181,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service
-
-PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-service \
     memtrack.bengal \
-    gralloc.bengal \
-    hwcomposer.bengal
+    gralloc.bengal
 
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
@@ -303,7 +289,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service
 
 PRODUCT_PACKAGES += \
@@ -323,8 +308,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libstagefrighthw \
-    libstagefrighthw_omx \
-    libstagefrighthw_foundation \
     libstagefright_omx.vendor
 
 PRODUCT_COPY_FILES += \
@@ -343,12 +326,11 @@ PRODUCT_COPY_FILES += \
 # Mlipay
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay@1.1.vendor \
-    vendor.xiaomi.hardware.mtdservice@1.0.vendor
+    vendor.xiaomi.hardware.mtdservice@1.2.vendor
 
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
-    android.hardware.secure_element@1.2-service \
     com.android.nfc_extras \
     libchrome.vendor \
     NfcNci \
@@ -385,7 +367,6 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2 \
     android.hardware.power@1.2.vendor \
     android.hardware.power-service-qti
 
@@ -438,7 +419,6 @@ PRODUCT_PACKAGES += \
 
 # Servicetracker
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.servicetracker@1.2-service \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
 # Soong namespaces
